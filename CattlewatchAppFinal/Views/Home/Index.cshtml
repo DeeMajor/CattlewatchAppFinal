@@ -6,10 +6,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Logistics &mdash; Colorlib Website Template</title>
+    <title>Cattlewatch &mdash; Home Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/Client/fonts/icomoon/style.css">
     <link rel="stylesheet" href="~/Client/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/Client/css/magnific-popup.css">
@@ -40,7 +41,7 @@
             <div class="row align-items-center">
 
                 <div class="col-11 col-xl-2 site-logo">
-                    <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Logis</a></h1>
+                    <a href="@Url.Action("Index", "Home")" class="logo"> <img src="~/Client/images/CWA Logo.png" width="300" alt="Cattlewatch Africa"> </a>
                 </div>
                 <div class="col-12 col-md-10 d-none d-xl-block">
                     <nav class="site-navigation position-relative text-right" role="navigation">
@@ -54,7 +55,7 @@
                                 </ul>
                             </li>
                             <li><a href="#section-services" class="nav-link">Services</a></li>
-                            <li><a href="#section-industries" class="nav-link">Industries</a></li>
+                            <li><a href="#section-industries" class="nav-link">Product</a></li>
                             <li><a href="#section-blog" class="nav-link">Blog</a></li>
                             <li><a href="#section-contact" class="nav-link">Contact</a></li>
                         </ul>
@@ -68,14 +69,18 @@
 
     </header>
 
-    <div class="site-blocks-cover overlay" style="background-image: url(../Client/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+    <div class="site-blocks-cover overlay" style="background-image: url(../Client/images/Cows.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
+        <div style="background-color:rgba(0, 0, 0, 0.7);">
 
-                    <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">We Make Shipping</h1>
-                    <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A Logistics Company</p>
-                    <p data-aos="fade-up" data-aos-delay="200"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center">
+                    <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+
+                        <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">We Monitor Livestock</h1>
+                        <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A Technology Company</p>
+                        <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,19 +90,24 @@
             <div class="row mb-5">
 
                 <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
-                    <img src="~/Client/images/img_3.jpg" alt="Image" class="img-fluid rounded">
+                    <img src="~/Client/images/About.jpeg" alt="Image" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6 order-md-1" data-aos="fade-up">
                     <div class="text-left pb-1 border-primary mb-4">
                         <h2 class="text-primary">About Us</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
-                    <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
-
+                    <p>
+                        Our product is the State-of-the art remote monitoring / IoT solution that allows farmers of small and large cattle herds to manage their stock more effectively.
+                        Cattle Watch develops innovative, state-of-the-art technology in the field of remote monitoring systems / IoT for cattle herds, sheep and goats.
+                        The purpose of the system is to prevent animal theft through GPS and Satellite tracking, provides early theft warning as well as GeoFencing to prevent animals straying out of the designated grazing area. The system provides an easy and automated animal counting technology that makes it even easy for farmers to count a large number of stock in a a matter of minutes and is able to monitor the health of animals and help curb the spread of diseases.
+                        The technology is based on Artificial Intelligence, Deep Learning and Mass Data algorithms and Cattle-Watch is the only operational system for monitoring cattle herds in the market right now.
+                    </p>
                     <ul class="ul-check list-unstyled success">
-                        <li>Error minus sint nobis dolor</li>
-                        <li>Voluptatum porro expedita labore esse</li>
-                        <li>Voluptas unde sit pariatur earum</li>
+                        <li>Early Theft Warning</li>
+                        <li>Geo fencing</li>
+                        <li>Location and Tracking</li>
+                        <li>Automated counting</li>
+                        <li>Remote herds and health status</li>
                     </ul>
 
                 </div>
@@ -169,7 +179,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
                     <div class="person">
-                        <img src="~/Client/images/person_1.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                        <img src="~/Client/images/Zolani.jpeg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
                         <h3>Christine Rooster</h3>
                         <p class="position text-muted">Co-Founder, President</p>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
@@ -183,7 +193,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
                     <div class="person">
-                        <img src="~/Client/images/person_2.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                        <img src="~/Client/images/Mark.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
                         <h3>Brandon Sharp</h3>
                         <p class="position text-muted">Co-Founder, COO</p>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
@@ -219,52 +229,53 @@
             <div class="row justify-content-center mb-5" data-aos="fade-up">
                 <div class="col-md-7 text-center border-primary">
                     <h2 class="mb-0 text-primary">Our Services</h2>
-                    <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+                    <p class="color-black-opacity-5">What we offer.</p>
                 </div>
             </div>
             <div class="row align-items-stretch">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div>
-                        <div>
-                            <h3>Air Freight</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div>
+                        <div class="unit-4-icon mr-4"><span class="text-primary fa fa-apple"></span><i class="text-primary fa fa-android fa-3x"></i></div>
+
                         <div>
-                            <h3>Ocean Freight</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <h3>App Monitoring</h3>
+                            <p>The technology allows you to monitor everything, including deployment of drone if payed for, in the palm of your hands using a Cattlewatch app.</p>
+                            @*<p><a href="#">Learn More</a></p>*@
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div>
+                        <div class="unit-4-icon mr-4"><span class="text-primary fa fa-desktop"></span></div>
                         <div>
-                            <h3>Land Transportation</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <h3>24/7 Monitoring</h3>
+                            <p>We have a control room dedicated to survey and respond to all client's alerts within the system wherever they are.There is a dedicated response team within the control room for you. Therefore you do not have to be on the app</p>
+                            @*<p><a href="#">Learn More</a></p>*@
                         </div>
                     </div>
                 </div>
-
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary fa fa-fighter-jet"></span></div>
+                        <div>
+                            <h3>Air Drone surveillence</h3>
+                            <p>This is an added service to the standerd service. When an emergency alert occurs the user or Cattlewatch personel is able to deploy the drone to the location where the alert occured to capture the event.</p>
+                            @*<p><a href="#">Learn More</a></p>*@
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div>
+                        <div class="unit-4-icon mr-4"><span class="text-primary fa fa-info-circle"></span></div>
                         <div>
-                            <h3>Warehousing</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <h3>Technical Support</h3>
+                            <p>Around the clock technical support. We have engineers to tackle all possible errors that might arise in due course.</p>
+                            @*<p><a href="#">Learn More</a></p>*@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                @*<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="unit-4 d-flex">
                         <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div>
                         <div>
@@ -273,8 +284,8 @@
                             <p><a href="#">Learn More</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                </div>*@
+                @*<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="unit-4 d-flex">
                         <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div>
                         <div>
@@ -283,7 +294,7 @@
                             <p><a href="#">Learn More</a></p>
                         </div>
                     </div>
-                </div>
+                </div>*@
             </div>
         </div>
     </div>
@@ -292,8 +303,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center border-primary">
-                    <h2 class="mb-0 text-primary">Industries</h2>
-                    <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+                    <h2 class="mb-0 text-primary">Product</h2>
+                    <p class="color-black-opacity-5">Piecing together our product</p>
                 </div>
             </div>
         </div>
@@ -411,47 +422,7 @@
             </div>
         </div>
     </div>
-    <div class="site-section" id="section-blog">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center border-primary">
-                    <h2 class="font-weight-light text-primary">Our Blog</h2>
-                    <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-                </div>
-            </div>
-            <div class="row mb-5 align-items-stretch">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="h-entry">
-                        <a href="single.html"><img src="~/Client/images/blog_1.jpg" alt="Image" class="img-fluid"></a>
-                        <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-entry">
-                        <a href="single.html"><img src="~/Client/images/blog_2.jpg" alt="Image" class="img-fluid"></a>
-                        <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-entry">
-                        <a href="single.html"><img src="~/Client/images/blog_3.jpg" alt="Image" class="img-fluid"></a>
-                        <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <p class="mb-0"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">View All Blog Posts</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="site-section bg-light" id="section-contact">
         <div class="container">
             <div class="row justify-content-center mb-5">
@@ -507,11 +478,11 @@
 
                     <div class="p-4 mb-3 bg-white">
                         <p class="mb-0 font-weight-bold">Address</p>
-                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        <p class="mb-4">73 Old Main Road, Kloof, Durban, South Africa</p>
                         <p class="mb-0 font-weight-bold">Phone</p>
-                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                        <p class="mb-4"><a href="#">+27 860 3333 56</a></p>
                         <p class="mb-0 font-weight-bold">Email Address</p>
-                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                        <p class="mb-0"><a href="#">info@cattlewatch.co.za</a></p>
                     </div>
 
                     <div class="p-4 mb-3 bg-white">
