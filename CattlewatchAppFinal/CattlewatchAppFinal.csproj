@@ -226,6 +226,7 @@
     <Content Include="Client\images\person_4.jpg" />
     <Content Include="Client\images\person_5.jpg" />
     <Content Include="Client\images\person_6.jpg" />
+    <Content Include="Client\images\videoplayback.mp4" />
     <Content Include="Client\images\Zolani.jpeg" />
     <Content Include="Client\js\aos.js" />
     <Content Include="Client\js\bootstrap-datepicker.min.js" />
