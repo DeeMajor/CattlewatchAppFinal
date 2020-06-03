@@ -236,8 +236,10 @@
     <Content Include="Client\images\person_4.jpg" />
     <Content Include="Client\images\person_5.jpg" />
     <Content Include="Client\images\person_6.jpg" />
+    <Content Include="Client\images\TheePic.jpg" />
     <Content Include="Client\images\Tower.jpg" />
     <Content Include="Client\images\videoplayback.mp4" />
+    <Content Include="Client\images\WatchVid.jpg" />
     <Content Include="Client\images\Zo.jpg" />
     <Content Include="Client\js\aos.js" />
     <Content Include="Client\js\bootstrap-datepicker.min.js" />
