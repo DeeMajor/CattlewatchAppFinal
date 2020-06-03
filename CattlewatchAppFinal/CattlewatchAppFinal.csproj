@@ -215,9 +215,11 @@
     <Content Include="Client\images\CollarTag.jpg" />
     <Content Include="Client\images\CollarTagInstalled.jpg" />
     <Content Include="Client\images\Cows.jpeg" />
+    <Content Include="Client\images\CowsBG.jpg" />
     <Content Include="Client\images\CWA Logo.png" />
     <Content Include="Client\images\GatewayInstalled.jpg" />
     <Content Include="Client\images\GInstallation.jpg" />
+    <Content Include="Client\images\Glen.jpg" />
     <Content Include="Client\images\hero_bg_1.jpg" />
     <Content Include="Client\images\hero_bg_2.jpg" />
     <Content Include="Client\images\hero_bg_3.jpg" />
@@ -227,7 +229,7 @@
     <Content Include="Client\images\img_3.jpg" />
     <Content Include="Client\images\img_4.jpg" />
     <Content Include="Client\images\img_5.jpg" />
-    <Content Include="Client\images\Mark.jpg" />
+    <Content Include="Client\images\Markk.jpg" />
     <Content Include="Client\images\person_1.jpg" />
     <Content Include="Client\images\person_2.jpg" />
     <Content Include="Client\images\person_3.jpg" />
@@ -236,7 +238,7 @@
     <Content Include="Client\images\person_6.jpg" />
     <Content Include="Client\images\Tower.jpg" />
     <Content Include="Client\images\videoplayback.mp4" />
-    <Content Include="Client\images\Zolani.jpeg" />
+    <Content Include="Client\images\Zo.jpg" />
     <Content Include="Client\js\aos.js" />
     <Content Include="Client\js\bootstrap-datepicker.min.js" />
     <Content Include="Client\js\bootstrap.min.js" />
