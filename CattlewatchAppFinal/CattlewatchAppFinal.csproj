@@ -229,6 +229,7 @@
     <Content Include="Client\images\img_3.jpg" />
     <Content Include="Client\images\img_4.jpg" />
     <Content Include="Client\images\img_5.jpg" />
+    <Content Include="Client\images\Lora.jpg" />
     <Content Include="Client\images\Markk.jpg" />
     <Content Include="Client\images\person_1.jpg" />
     <Content Include="Client\images\person_2.jpg" />
