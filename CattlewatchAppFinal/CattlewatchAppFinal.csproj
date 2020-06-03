@@ -241,6 +241,7 @@
     <Content Include="Client\images\Tower.jpg" />
     <Content Include="Client\images\videoplayback.mp4" />
     <Content Include="Client\images\WatchVid.jpg" />
+    <Content Include="Client\images\WhiteLogo.jpg" />
     <Content Include="Client\images\Zo.jpg" />
     <Content Include="Client\js\aos.js" />
     <Content Include="Client\js\bootstrap-datepicker.min.js" />
