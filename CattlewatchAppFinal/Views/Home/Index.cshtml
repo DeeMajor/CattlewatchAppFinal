@@ -498,11 +498,11 @@
                             <div class="row form-group">
                                 <div class="col-md-6 mb-3 mb-md-0">
                                     <label class="text-black" for="fname">First Name</label>
-                                    <input type="text" id="fname" class="form-control">
+                                    @Html.EditorFor(Model => Model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
                                 </div>
                                 <div class="col-md-6">
                                     <label class="text-black" for="lname">Last Name</label>
-                                    <input type="text" id="lname" class="form-control">
+                                    @Html.EditorFor(Model => Model.LastName, new { htmlAttributes = new { @class = "form-control" } })
                                 </div>
                             </div>
                             <div class="row form-group">

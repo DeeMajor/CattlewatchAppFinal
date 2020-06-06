@@ -34,6 +34,7 @@ namespace CattlewatchAppFinal.Controllers
                     StringBuilder message = new StringBuilder();
                     MailAddress from = new MailAddress(contact.Email.ToString());
                     message.Append("Name: " + contact.FirstName + "\n");
+                    message.Append("Last Name: " + contact.LastName + "\n");
                     message.Append("Email: " + contact.Email + "\n");
                     message.Append("Telephone: " + contact.Telephone + "\n\n");
                     message.Append("Subject: " + contact.Supject + "\n\n");

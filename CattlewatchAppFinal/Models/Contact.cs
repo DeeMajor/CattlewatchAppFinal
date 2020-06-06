@@ -10,7 +10,9 @@ namespace CattlewatchAppFinal.Models
     {
           
             public string FirstName { get; set; }
-            public string Supject { get; set; }
+        public string LastName { get; set; }
+
+        public string Supject { get; set; }
             [Required]
             public string Email { get; set; }
             [Required]
