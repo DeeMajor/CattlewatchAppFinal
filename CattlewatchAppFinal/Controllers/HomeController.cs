@@ -7,6 +7,7 @@ using CattlewatchAppFinal.Models;
 using System.Net.Mail;
 using System.Text;
 
+
 namespace CattlewatchAppFinal.Controllers
 {
     public class HomeController : Controller
@@ -49,7 +50,7 @@ namespace CattlewatchAppFinal.Controllers
                     smtp.Port = 587;
                     smtp.EnableSsl = true;
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new System.Net.NetworkCredential("cattlewatch01@gmail.com", "WatchCattle-2011");
+                    smtp.Credentials = new System.Net.NetworkCredential("andilebshange@gmail.com", "141296#Maria");
                     smtp.Send(msg);
 
                     
