@@ -1,7 +1,9 @@
-﻿
+﻿@using CattlewatchAppFinal.Models
 @{
     ViewBag.Title = "GetEstimate";
     Layout = "~/Views/Shared/_Client.cshtml";
+    ApplicationDbContext db = new ApplicationDbContext();
+    var livestock = db.Livestocks.ToList();
 }
 
 <div class="content">
@@ -16,7 +18,25 @@
                     1.
                     @*<small>GB</small>*@
                 </h3>
+
             </div>
+            <div class="card-body" style="text-align:left">
+                @foreach (var item in livestock)
+                {
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input pull-left" type="checkbox" value="">
+                            @item.livestockName
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                    </div>
+                }
+
+
+            </div>
+            
             <div class="card-footer">
                 <div class="stats">
 

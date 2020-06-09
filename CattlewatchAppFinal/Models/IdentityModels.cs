@@ -29,5 +29,7 @@ namespace CattlewatchAppFinal.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CattlewatchAppFinal.Models.Livestock> Livestocks { get; set; }
     }
 }

@@ -1,19 +1,29 @@
-﻿using System;
+﻿using CattlewatchAppFinal.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace CattlewatchAppFinal.Controllers
 {
     public class AdminController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Admin
         public ActionResult Index()
         {
-            return View();
+            var liveStock = db.Livestocks.ToList();
+           
+            return View(liveStock);
         }
+        public ActionResult ShowLivestock()
+        {
 
+            return PartialView("ShowLivestock", db.Livestocks.ToList());
+        }
         // GET: Admin/Details/5
         public ActionResult Details(int id)
         {
