@@ -31,5 +31,11 @@ namespace CattlewatchAppFinal.Models
         }
 
         public System.Data.Entity.DbSet<CattlewatchAppFinal.Models.Livestock> Livestocks { get; set; }
+
+        public System.Data.Entity.DbSet<CattlewatchAppFinal.Models.Order> Orders { get; set; }
+
+        public System.Data.Entity.DbSet<CattlewatchAppFinal.Models.LivestockOrder> LivestockOrders { get; set; }
+
+        public System.Data.Entity.DbSet<CattlewatchAppFinal.Models.Location> Locations { get; set; }
     }
 }

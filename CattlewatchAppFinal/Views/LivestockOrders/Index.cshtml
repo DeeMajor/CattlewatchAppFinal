@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CattlewatchAppFinal.Models.LivestockOrder>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Livestock.livestockName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order.ClientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numberOfLivestock)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Livestock.livestockName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location.Latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order.ClientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numberOfLivestock)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LivestoOrderckId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LivestoOrderckId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LivestoOrderckId })
+        </td>
+    </tr>
+}
+
+</table>

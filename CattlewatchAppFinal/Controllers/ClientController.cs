@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CattlewatchAppFinal.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace CattlewatchAppFinal.Controllers
 {
     public class ClientController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Client
         public ActionResult Dashboard()
         {
@@ -15,6 +17,30 @@ namespace CattlewatchAppFinal.Controllers
         }
         public ActionResult GetEstimate()
         {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult GetEstimate(Order order)
+        {
+
+            var livestock = order.SelectedLivestock.ToList();
+            order.Orderstatus = "Estimate";
+            db.Orders.Add(order);
+            
+
+            foreach (var item in livestock)
+            {
+                if (ModelState.IsValid)
+                {
+                    LivestockOrder ls = new LivestockOrder();
+                    ls.OrderId = order.OrderId;
+                    db.LivestockOrders.Add(ls);
+                    db.SaveChanges();
+                    var itemremove = livestock.FirstOrDefault();
+                    livestock.Remove(itemremove);
+                }
+            }
             return View();
         }
         // GET: Client/Details/5

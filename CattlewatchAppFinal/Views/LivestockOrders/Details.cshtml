@@ -1,0 +1,50 @@
+﻿@model CattlewatchAppFinal.Models.LivestockOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LivestockOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Livestock.livestockName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Livestock.livestockName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.ClientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.ClientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numberOfLivestock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numberOfLivestock)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LivestoOrderckId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
