@@ -9,7 +9,7 @@ namespace CattlewatchAppFinal.Controllers
     public class ClientController : Controller
     {
         // GET: Client
-        public ActionResult Index()
+        public ActionResult Dashboard()
         {
             return View();
         }

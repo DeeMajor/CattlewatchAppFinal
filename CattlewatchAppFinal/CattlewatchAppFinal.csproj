@@ -623,7 +623,7 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_Client.cshtml" />
     <Content Include="Views\Shared\_Admin.cshtml" />
-    <Content Include="Views\Client\Index.cshtml" />
+    <Content Include="Views\Client\Dashboard.cshtml" />
     <Content Include="Views\Client\GetEstimate.cshtml" />
     <Content Include="Views\Livestocks\Create.cshtml" />
     <Content Include="Views\Livestocks\Delete.cshtml" />
