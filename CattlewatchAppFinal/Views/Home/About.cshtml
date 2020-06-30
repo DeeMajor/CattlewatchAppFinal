@@ -2,173 +2,102 @@
     ViewBag.Title = "About";
     Layout = null;
 }
-<html lang="en">
+<!doctype html>
+
+<html>
+
 <head>
-    <meta charset="utf-8">
-
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Gallery- Cattlewatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="~/Client/css/style1.css">
+    <link rel="stylesheet" href="~/Client/css/hes-gallery.css">
+    <link rel="stylesheet" href="~/Client/css/style.css">
     <style>
-        body {
-            display: grid;
-            place-content: center;
-            min-height: 100vh;
-            overflow: hidden;
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            margin-right: 2%;
+            margin-top: 2%;
+            background-color: none;
+            float: right;
         }
-
-        .w {
-            width: 100vmin;
-            height: 90vmin;
-        }
-
-        .ts {
-            width: 105%;
-            height: 95%;
+        .background {
+            background: url('../Client/images/cows.jpeg');
             position: relative;
-            --barH: 15%; /*active zone height = 100% - barH*/
+            background-attachment: fixed;
         }
 
-        .t {
-            --w: 20%;
-            display: block;
-            width: var(--w);
-            height: var(--barH);
+        .layer {
+            background-color: rgba(0, 0, 0, 0.87);
             position: absolute;
-            bottom: 0;
-            left: var(--l);
-            transform-origin: top left;
-        }
-
-            .t img {
-                dislay: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transform: scale(0.8);
-            }
-
-        [type="radio"] {
-            display: none;
-        }
-
-        :checked + label.t {
+            top: 0;
             left: 0;
-            bottom: var(--barH);
-            height: calc(100% - var(--barH));
+            width: 100%;
+            height: 100%;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
         }
 
-            :checked + label.t img {
-                object-fit: contain;
+            a:hover {
+                background-color: #ddd;
+                color: black;
             }
 
-        /*
-            optional
-            */
-
-        .ts { /*thumbnails bar*/
-            perspective: 100px;
-            perspective-origin: center center;
-            transform-style: preserve-3d;
-            pointer-events: none;
+        .previous {
+            background-color: #4CAF50;
+            color: black;
         }
-
-            .ts:after { /*the plate*/
-                content: "";
-                display: block;
-                width: 100%;
-                height: 15px;
-                position: absolute;
-                bottom: 0;
-                background: linear-gradient(transparent 20%, rgba(0,0,0,0.1));
-                transform: rotateX(90deg)scaleX(1.2);
-                transform-origin: bottom center;
-            }
-
-        :not(:checked) + .t { /*inactive labels*/
-            transform: translate3d(0, 0, -5px);
-            pointer-events: auto;
+        .round {
+            border-radius: 50%;
         }
-
-            :not(:checked) + .t:hover {
-                transform: translate3d(0, -7px, -5px);
-                box-shadow: 0 30px 30px -25px rgba(0,0,0,0.3);
-                cursor: pointer;
-            }
-
-            :not(:checked) + .t img {
-                transform: scale(0.9); /*create gaps*/
-            }
-
-        :checked + .t { /*active label*/
-            box-shadow: 0 0 0 transparent;
-            animation: anim 2s 1;
-        }
-
-        keyframes anim {
-            from
-
-        {
-            transform: rotateY(6deg)rotateX(3deg)
-        }
-
-        }
-
-        /*
-            transitions
-            */
-        .t { /*active->inactive & hover->rest*/
-            transition: transform 0.5s, bottom 0.6s, left 0.6s, width 0.3s, box-shadow 1s;
-        }
-
-            .t:hover, :checked + .t {
-                transition: transform 0.5s, bottom 0.6s, left 0.6s, width 0.3s, box-shadow 0s;
-            }
     </style>
 </head>
-<body>
 
-    <div class="w">
-        <div class="ts">
-            <input type="radio" id="c1" name="ts" checked="checked" />
-            <label class="t" for="c1"><img src="https://images.unsplash.com/photo-1537886079430-486164575c54?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=4c747db3353a34b312d05786f47930d3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" /></label>
-            <input type="radio" id="c2" name="ts" />
-            <label class="t" for="c2"><img src="https://images.unsplash.com/photo-1537886194634-e6b923f92ff1?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=9eb2726071e58c1b0a430a75b1047525&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" /></label>
-            <input type="radio" id="c3" name="ts" />
-            <label class="t" for="c3"><img src="https://images.unsplash.com/photo-1537886243959-0b504cf58aa2?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=1171ce40e6e68e663c3399a67a915913&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" /></label>
-            <input type="radio" id="c4" name="ts" />
-            <label class="t" for="c4"><img src="https://images.unsplash.com/photo-1537886492139-052c27acbfee?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=664282a4bd8b8a69cc860420214df3e7&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" /></label>
-            <input type="radio" id="c5" name="ts" />
-            <label class="t" for="c5"><img src="https://images.unsplash.com/photo-1537886464786-8a0d500b0da6?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=49984d393482456ea5484c3482cc52a9&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" /></label>
+<body class="background">
+    <div class="layer">
+        <div class="sticky"><a href="@Url.Action("Index", "Home")" class="previous round">&#8249;</a></div>
+        <div class="container">
+            <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up" style="color:white;text-align:center">WINTERTON EXHIBITION</h1>
+            <div class="hes-gallery">
+                <img src="~/Client/images/TheePic.jpg" alt="image1" data-fullsize="img/dogo-uno.jpg" data-subtext='piesiak'>
+                <img src="~/Client/images/TheePic.jpg" alt="image2" data-subtext="Podpis zdjęcia kolejnego">
+                <img src="~/Client/images/TheePic.jpg" alt="image3" data-subtext="Kolejny podpis zdjęcia">
+                <img src="~/Client/images/TheePic.jpg" alt="image4" data-subtext="Podpis czwartego już zdjęcia">
+            </div>
+        </div>
+        
+
+        <h2 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up" style="color:white;text-align:center">EXTRA PHOTOS</h2>
+        <div class="hes-gallery" data-wrap="false" data-img-count="false">
+            <img src="~/Client/images/Zo.jpg" alt="image1" data-subtext="kociak" data-alt="kociak">
+            <img src="~/Client/images/Zo.jpg" alt="image2" data-subtext="Kolejny kociak">
+            <img src="~/Client/images/Zo.jpg" alt="image3" data-subtext="Trzeci kociak ^^">
+            <img src="~/Client/images/Zo.jpg" alt="image4" data-subtext="Leci czwart" data-alt="co jeest">
+            <img src="~/Client/images/Zo.jpg" alt="image5" data-subtext="Daleeeej">
+            <img src="~/Client/images/Zo.jpg" alt="image6" data-subtext="Kozaaak">
+            <img src="~/Client/images/Zo.jpg" alt="image7" data-subtext="Słodziaaaaak">
+            <img src="~/Client/images/Zo.jpg" alt="image8" data-subtext="Ostatni kociak :/">
         </div>
     </div>
 
+        <!-- <script src="../src/hes-gallery.js"></script> -->
+        <script src="~/Client/css/hes-gallery.js"></script>
+        <script>
+
+            HesGallery.setOptions({
+                disableScrolling: false,
+                hostedStyles: false,
+                animations: true,
+
+                showImageCount: true,
+                wrapAround: true
+            });
+
+        </script>
 </body>
-
 </html>
-<script>
-    const els = document.querySelectorAll("[type='radio']");
-    for (const el of els)
-        el.addEventListener("input", e => reorder(e.target, els));
-    reorder(els[0], els);
-
-    function reorder(targetEl, els) {
-        const nItems = els.length;
-        let processedUncheck = 0;
-        for (const el of els) {
-            const containerEl = el.nextElementSibling;
-            if (el === targetEl) {//checked radio
-                containerEl.style.setProperty("--w", "100%");
-                containerEl.style.setProperty("--l", "0");
-            }
-            else {//unchecked radios
-                containerEl.style.setProperty("--w", `${100 / (nItems - 1)}%`);
-                containerEl.style.setProperty("--l", `${processedUncheck * 100 / (nItems - 1)}%`);
-                processedUncheck += 1;
-            }
-        }
-    }
-
-</script>

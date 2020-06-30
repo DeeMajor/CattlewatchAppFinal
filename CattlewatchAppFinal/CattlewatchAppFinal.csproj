@@ -247,12 +247,15 @@
     <Content Include="Client\css\bootstrap\bootstrap-reboot.css" />
     <Content Include="Client\css\bootstrap\bootstrap.css" />
     <Content Include="Client\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Client\css\hes-gallery.css" />
+    <Content Include="Client\css\hes-gallery.js" />
     <Content Include="Client\css\jquery-ui.css" />
     <Content Include="Client\css\magnific-popup.css" />
     <Content Include="Client\css\mediaelementplayer.css" />
     <Content Include="Client\css\owl.carousel.min.css" />
     <Content Include="Client\css\owl.theme.default.min.css" />
     <Content Include="Client\css\style.css" />
+    <Content Include="Client\css\style1.css" />
     <Content Include="Client\fonts\flaticon\backup.txt" />
     <Content Include="Client\fonts\flaticon\font\flaticon.css" />
     <Content Include="Client\fonts\flaticon\font\flaticon.html" />
