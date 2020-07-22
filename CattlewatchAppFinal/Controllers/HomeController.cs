@@ -16,7 +16,14 @@ namespace CattlewatchAppFinal.Controllers
         {
             return View();
         }
-
+        public ActionResult Collar()
+        {
+            return View();
+        }
+        public ActionResult Lora()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

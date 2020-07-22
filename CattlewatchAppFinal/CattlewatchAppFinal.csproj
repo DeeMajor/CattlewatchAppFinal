@@ -279,9 +279,23 @@
     <Content Include="Client\images\Cows.jpeg" />
     <Content Include="Client\images\CowsBG.jpg" />
     <Content Include="Client\images\CWA Logo.png" />
+    <Content Include="Client\images\DJI_0017.JPG" />
     <Content Include="Client\images\GatewayInstalled.jpg" />
     <Content Include="Client\images\GInstallation.jpg" />
     <Content Include="Client\images\Glen.jpg" />
+    <Content Include="Client\images\IMG-20200722-WA0044.jpg" />
+    <Content Include="Client\images\IMG-20200722-WA0045.jpg" />
+    <Content Include="Client\images\IMG-20200722-WA0046.jpg" />
+    <Content Include="Client\images\IMG-20200722-WA0047.jpg" />
+    <Content Include="Client\images\IMG_20200722_120720.jpg" />
+    <Content Include="Client\images\IMG_20200722_120727.jpg" />
+    <Content Include="Client\images\IMG_20200722_120812.jpg" />
+    <Content Include="Client\images\IMG_20200722_120813.jpg" />
+    <Content Include="Client\images\IMG_20200722_120851.jpg" />
+    <Content Include="Client\images\IMG_20200722_120905.jpg" />
+    <Content Include="Client\images\IMG_20200722_120907.jpg" />
+    <Content Include="Client\images\IMG_20200722_120916.jpg" />
+    <Content Include="Client\images\IMG_8788.jpg" />
     <Content Include="Client\images\Lora.jpg" />
     <Content Include="Client\images\Markk.jpg" />
     <Content Include="Client\images\TheePic.jpg" />
@@ -684,6 +698,8 @@
     <Content Include="Views\Locations\Details.cshtml" />
     <Content Include="Views\Locations\Edit.cshtml" />
     <Content Include="Views\Locations\Index.cshtml" />
+    <Content Include="Views\Home\Collar.cshtml" />
+    <Content Include="Views\Home\Lora.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
