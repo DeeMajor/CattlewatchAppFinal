@@ -283,10 +283,14 @@
     <Content Include="Client\images\GatewayInstalled.jpg" />
     <Content Include="Client\images\GInstallation.jpg" />
     <Content Include="Client\images\Glen.jpg" />
+    <Content Include="Client\images\HowitWorks.jpg" />
     <Content Include="Client\images\IMG-20200722-WA0044.jpg" />
     <Content Include="Client\images\IMG-20200722-WA0045.jpg" />
     <Content Include="Client\images\IMG-20200722-WA0046.jpg" />
     <Content Include="Client\images\IMG-20200722-WA0047.jpg" />
+    <Content Include="Client\images\IMG_20200315_172901.jpg" />
+    <Content Include="Client\images\IMG_20200315_173004.jpg" />
+    <Content Include="Client\images\IMG_20200315_173030.jpg" />
     <Content Include="Client\images\IMG_20200722_120720.jpg" />
     <Content Include="Client\images\IMG_20200722_120727.jpg" />
     <Content Include="Client\images\IMG_20200722_120812.jpg" />
@@ -295,8 +299,11 @@
     <Content Include="Client\images\IMG_20200722_120905.jpg" />
     <Content Include="Client\images\IMG_20200722_120907.jpg" />
     <Content Include="Client\images\IMG_20200722_120916.jpg" />
+    <Content Include="Client\images\IMG_20200722_151140.jpg" />
     <Content Include="Client\images\IMG_8788.jpg" />
-    <Content Include="Client\images\Lora.jpg" />
+    <Content Include="Client\images\lora.jpg" />
+    <Content Include="Client\images\lorafin.jpg" />
+    <Content Include="Client\images\lorawan.png" />
     <Content Include="Client\images\Markk.jpg" />
     <Content Include="Client\images\TheePic.jpg" />
     <Content Include="Client\images\Tower.jpg" />
@@ -326,7 +333,9 @@
     <Content Include="Client\images\Website\IMG_9102.jpg" />
     <Content Include="Client\images\White.jpg" />
     <Content Include="Client\images\WhiteLogo.jpg" />
+    <Content Include="Client\images\workedtfinal.jpg" />
     <Content Include="Client\images\Zo.jpg" />
+    <Content Include="Client\images\IMG_20200722_151342.jpg" />
     <Content Include="Client\js\aos.js" />
     <Content Include="Client\js\bootstrap-datepicker.min.js" />
     <Content Include="Client\js\bootstrap.min.js" />
@@ -700,6 +709,8 @@
     <Content Include="Views\Locations\Index.cshtml" />
     <Content Include="Views\Home\Collar.cshtml" />
     <Content Include="Views\Home\Lora.cshtml" />
+    <Content Include="Views\Home\App.cshtml" />
+    <Content Include="Views\Home\Drone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

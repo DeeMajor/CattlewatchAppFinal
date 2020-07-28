@@ -24,6 +24,14 @@ namespace CattlewatchAppFinal.Controllers
         {
             return View();
         }
+        public ActionResult App()
+        {
+            return View();
+        }
+        public ActionResult Drone()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
